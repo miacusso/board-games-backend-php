@@ -1,0 +1,9 @@
+# HTID:15940806: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:15940806:
+
+# map neat URL to internal URL
+RedirectMatch 301 "^/server/([0-9]+)/players$" "/server/server.php?action=players&game=$1"
+RedirectMatch 301 "^/server/([0-9]+)/result-table$" "/server/server.php?action=result-table&game=$1"
+RedirectMatch 307 "^/server/([0-9]+)/winner$" "/server/server.php?action=winner&game=$1"
+RedirectMatch 301 "^/server/([0-9]+)/delete-result-table$" "/server/server.php?action=delete-result-table&game=$1"
